@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Edit ton potin</title>
+  </head>
+  <body>
+    <h1>Modif de ton potin</h1>
+    <p>edit ton popotin</p>
+    <form action='/gossips/<%= params['id'] %>/edit' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author' value='<%= gossips.author %>'/><br/>
+      Balance ton potin : <input type='text' name='gossip_content' value='<%= gossips.content %>'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
